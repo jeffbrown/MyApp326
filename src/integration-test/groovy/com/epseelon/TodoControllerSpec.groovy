@@ -1,17 +1,17 @@
 package com.epseelon
 
-import geb.spock.GebSpec
 import grails.http.client.RxHttpClientBuilder
 import grails.test.mixin.integration.Integration
 import grails.transaction.Transactional
 import spock.lang.Shared
+import spock.lang.Specification
 
 /**
  * Created by sarbogast on 14/02/2017.
  */
 @Integration
 @Transactional
-class TodoControllerSpec extends GebSpec {
+class TodoControllerSpec extends Specification {
 
     @Shared RxHttpClientBuilder rest = new RxHttpClientBuilder()
 
